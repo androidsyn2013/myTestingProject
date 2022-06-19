@@ -5,22 +5,22 @@
 # create a new repository use in graphical interface from GitHub
 
 # or create a new repository on the command line from git 
-  echo "# RepositoryName" >> README.md
-  git init
-  git add README.md
-  git commit -m "first commit"
-  git branch -M main
-  git remote add origin https://github.com/USERname/RepositoryName.git
-  git push -u origin main
+  $ echo "# RepositoryName" >> README.md
+  $ git init
+  $ git add README.md
+  $ git commit -m "first commit"
+  $ git branch -M main
+  $ git remote add origin https://github.com/USERname/RepositoryName.git
+  $ git push -u origin main
 
 # or push an existing repository from the command line in git
-  git remote add origin https://github.com/USERname/RepositoryName.git
-  git branch -M main
-  git push -u origin main
+  $ git remote add origin https://github.com/USERname/RepositoryName.git
+  $ git branch -M main
+  $ git push -u origin main
 
 # connecting git to GitHub from the command line in git
-  git remote add origin https://github.com/USERname/RepositoryName.git
-  git push origin main 
+  $ git remote add origin https://github.com/USERname/RepositoryName.git
+  $ git push origin main 
   and write GitHub username email password specific code 
   
 # "main" is  name of the branch name 
@@ -36,4 +36,39 @@
 
 # working directory এর command list
 
-# git --version   [git version check করার জন্য use হয়]
+  $ mkdir folderName
+  $ cd folderName
+  $ cd .. 
+  $ cd ../
+  $ ls
+  $ dir
+  $ pwd
+  $ touch fileName.txt
+  $ vim fileName.txt
+  $ clear 
+      
+  $ git --version   [git version check করার জন্য use হয়]
+  $ git config --global user.email "yourEmail@gmail.com"
+  $ git config --global user.name "yourUserName"
+  $ git init
+  $ git clone "https://github.com/USERname/RepositoryName.git"
+  $ git status
+ 
+# stage এর command list
+# working directory stage
+# git stage add
+
+  $ git add --all
+  $ git add -A
+  $ git add .
+  $ git add *
+  $ git add fileName
+  $ git add folderName
+  $ git add * .fileExtensionName
+  $ git reset 
+
+  
+
+
+
+

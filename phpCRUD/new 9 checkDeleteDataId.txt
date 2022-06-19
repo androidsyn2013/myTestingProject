@@ -1,0 +1,76 @@
+view_student.php
+
+<?php
+ require '../Day03/classes/Student.php';
+ 
+ $obj=new Student();
+ 
+ $result=$obj->select_all_student();
+ 
+ ?>
+<html>
+    <head>
+        <title>LIFE CARE MEDICAL HALL</title>
+    </head>
+    <body>
+        <table border="1" align="center" width="980px" height="1100px">
+            <tr>
+                <td width="150px" height="150px">LOGO</td>
+                <td colspan="2">BANNER</td>
+            </tr>
+             <tr>
+                 <td colspan="3" height="50px">
+                     <a href="add_student.php">Add Student</a> |
+                     <a href="view_student.php">View Student</a>
+                 </td>
+            </tr>
+            <tr>
+                <td>LEFT</td>
+                <td valign="top">
+                    <h3 align="center">View Student</h3>
+                    <hr/>
+                    <table align="center" border="1" width="70%">
+                        <tr>
+                            <th>ID</th>
+                            <th>Student Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                        </tr>
+                        <?php 
+                         while($row=mysqli_fetch_assoc($result))
+                         {
+                        ?>
+                        <tr>
+                            <td><?php echo $row['student_id']?></td>
+                            <td><?php echo $row['student_name']?></td>
+                            <td><?php echo $row['student_email']?></td>
+                            <td><?php echo $row['student_number']?></td>
+                            <td>
+                                <a href="">Edit</a> |
+                         <a href="delete_student.php?id=<?php echo $row['student_id']?>">Delete</a>
+                            </td>
+                        </tr>  
+                         <?php }?>  
+                    </table>    
+                </td>
+                <td width="150px">RIGHT</td>
+            </tr>
+            <tr>
+                <td colspan="3" height="80px">FOOTER</td>
+            </tr>
+        </table>
+    </body>
+    
+</html>
+
+
+delete_student.php
+
+<?php
+
+require '../Day03/classes/Student.php';
+
+$obj=new Student();
+
+echo '<pre>';
+echo $_GET['id'];

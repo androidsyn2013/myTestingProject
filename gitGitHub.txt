@@ -1,0 +1,39 @@
+# open account in GitHub.com
+
+# download git from https://git-scm.com/downloads
+
+# create a new repository use in graphical interface from GitHub
+
+# or create a new repository on the command line from git 
+  echo "# RepositoryName" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/USERname/RepositoryName.git
+  git push -u origin main
+
+# or push an existing repository from the command line in git
+  git remote add origin https://github.com/USERname/RepositoryName.git
+  git branch -M main
+  git push -u origin main
+
+# connecting git to GitHub from the command line in git
+  git remote add origin https://github.com/USERname/RepositoryName.git
+  git push origin main 
+  and write GitHub username email password specific code 
+  
+# "main" is  name of the branch name 
+  
+# git আর GitHub হচ্ছে data tracking system বা code management system
+# git কাজ করে Local Computer এর মাধ্যমে client side
+# git তিন ভাগে বিভক্ত ১.Working Directory ২.stage ৩.local repository 
+# GitHub কাজ করে Remote থেকে server এর মাধ্যমে server side
+# data যেখানে change করা হোক না কেন Local computer আর Remote server এ একই থাকবে
+# বিশেষ command এর মাধ্যম data tracking করা হয়
+
+# git command list
+
+# working directory এর command list
+
+# git --version   [git version check করার জন্য use হয়]

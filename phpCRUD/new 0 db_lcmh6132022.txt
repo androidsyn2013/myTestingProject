@@ -1,0 +1,19 @@
+===Database db_lcmh6132022
+
+== Table structure for table tbl_student
+
+|------
+|Column|Type|Null|Default
+|------
+|//**student_id**//|int(5)|No|
+|student_name|varchar(50)|No|
+|student_email|varchar(255)|No|
+|student_number|varchar(14)|No|
+== Dumping data for table tbl_student
+
+|1|abu420|abu420@gmail.com|65342333
+|2|sakib|sakib@gmail.com|6534221
+|5|sayem|sayem@gmail.com|6534221
+|7|abu420|abu420@gmail.com|01819234567
+|8|anju007|anju@yahoo.com|01731194711
+|23|habu|habu@hotmail.com|199188089

@@ -65,7 +65,24 @@
   $ git add fileName
   $ git add folderName
   $ git add * .fileExtensionName
-  $ git reset 
+  $ git reset
+
+# stage Local Repository
+# git Local Repository commit 
+
+  $ git commit -m "write your message" 
+  $ git reset HEAD~
+
+# git remove
+
+  $ git reset --hard
+  $ git rm fileName
+  $ git rm folderName
+  $ git rm fileName -f
+  $ git rm --cached fileName
+  $ git rm -r folderName
+
+# 
 
   
 

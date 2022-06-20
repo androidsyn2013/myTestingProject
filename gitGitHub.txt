@@ -32,7 +32,8 @@
 # data যেখানে change করা হোক না কেন Local computer আর Remote server এ একই থাকবে
 # বিশেষ command এর মাধ্যম data tracking করা হয়
 
-# git command 
+# git command list
+
 # working directory এর command list
 
   $ mkdir folderName	[নতুন folder তৈরি করা]
@@ -110,9 +111,9 @@
 
 # push - Remote কে git এর ভাষা origin বলা হয়
   
-  $ git push origin branchName[Local repository থেকে GitHub এ data পাঠানো জন্য]
-  $ git push origin branchName --force[সাধারণ অবস্থায় Local repository থেকে GitHub এ data না গেলে]
-
+  $ git push origin branchName		[Local repository থেকে GitHub এ data পাঠানো জন্য]
+  $ git push origin branchName --force	[সাধারণ অবস্থায় Local repository থেকে GitHub এ data না গেলে]
+  
   local repository এ তৈরি করা নতুন branch কে Remote/Server side বা GitHub এ নিতে চাইলে 
   প্রথমে নতুন তৈরি করা branch এ যেতে হবে তারপর push command চালাতে হবে 
   $ git checkout branchName 
@@ -120,5 +121,16 @@
   
  
 # fetch - Remote বা GitHub এ কোন data change হলে শুধুমাত্র change করা data local repository তে আসবে    
-  $ git fetch   
-আবু সায়েদ  abu sayed
+  
+  $ git fetch	[যে branch এ আছি সে branch এ change করা data আসবে কিন্তু তা working directory তে দেখাবে না তাই merge command চালাতে হবে] 
+  $ git merge	[আমার এখানে fetch command কাজ করলেও merge command কাজ করে নাই]
+
+# pull - Remote বা GitHub এ কোন data change হলে শুধুমাত্র change করা data local repository তে আসবে, fetch আর merge এর কাজ একসাথে করে 
+  
+  $ git pull				[আমার এখানে এই command কাজ করে নাই]
+  $ git pull origin branchName	[এই command কাজ করেছে] 
+
+		***************************************The End Is Not Over***************************************
+
+
+  

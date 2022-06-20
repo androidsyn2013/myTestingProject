@@ -36,56 +36,84 @@
 
 # working directory এর command list
 
-  $ mkdir folderName
-  $ cd folderName
-  $ cd .. 
-  $ cd ../
-  $ ls
-  $ dir
-  $ pwd
-  $ touch fileName.txt
-  $ vim fileName.txt
-  $ clear 
+  $ mkdir folderName	[নতুন folder তৈরি করা]
+  $ cd folderName		[folder এর ভেতর যাওয়া] 
+  $ cd ..			[current folder থেকে বের হওয়ার জন্য]              
+  $ cd ../			[current folder থেকে বের হওয়ার জন্য]
+  $ ls			[folder এর ভেতর সব file folder দেখার জন্য]
+  $ dir			[folder এর ভেতর সব file folder দেখার জন্য]
+  $ pwd			[যে folder এর ভেতর আছি সে folder এর path দেখার জন্য] 
+  $ touch fileName.txt	[নতুন text file তৈরি করা ]
+  $ vim fileName.txt	[text file edit করার জন্য]
+  $ clear			[command window পরিষ্কার করা] 
       
-  $ git --version   [git version check করার জন্য use হয়]
-  $ git config --global user.email "yourEmail@gmail.com"
-  $ git config --global user.name "yourUserName"
-  $ git init
-  $ git clone "https://github.com/USERname/RepositoryName.git"
-  $ git status
+  $ git --version									[git version check করার জন্য use হয়]
+  $ git config --global user.email "yourEmail@gmail.com"		[git আর GitHub এর মধ্যে connection তৈরি করা,GitHub যে email address আছে]
+  $ git config --global user.name "yourUserName"			[git আর GitHub এর মধ্যে connection তৈরি করা,GitHub যে user name আছে]
+  $ git init									[working directory এর ভেতর file folder কে git এর জন্য উপযুক্ত করা]
+  $ git clone "https://github.com/USERname/RepositoryName.git"	[GitHub থেকে সম্পুন Repository copy হইয়ে আসবে ]
+  $ git status									[git এর current অবস্থা দেখা]
  
 # stage এর command list
-# working directory stage
-# git stage add
+# working directory থেকে stage এ যাওয়া
+# git এর ভাষায় stage কে add করা বুঝায় 
 
-  $ git add --all
-  $ git add -A
-  $ git add .
-  $ git add *
-  $ git add fileName
-  $ git add folderName
-  $ git add * .fileExtensionName
-  $ git reset
+  $ git add --all				[working directory এর সব file folder কে stage এ নিয়ে আসে]
+  $ git add -A				[working directory এর সব file folder কে stage এ নিয়ে আসে]
+  $ git add .				[working directory এর ভেতর শুধুমাত্র current folder এর সব file folder কে stage এ নিয়ে আসে]
+  $ git add *				[working directory এর ভেতর শুধুমাত্র delete হওয়া file folder ছাড়া আর বাকি সব file folder কে stage এ নিয়ে আসে]
+  $ git add fileName			[working directory এর ভেতর নিদিষ্ট file কে stage এ নিয়ে আসে]
+  $ git add folderName/fileName     [working directory এর ভেতর নিদিষ্ট file কে stage এ নিয়ে আসে]
+  $ git add folderName			[working directory এর ভেতর নিদিষ্ট folder কে stage এ নিয়ে আসে]
+  $ git add * .fileExtensionName	[working directory এর ভেতর নিদিষ্ট file এর extension(Exp. mynote.txt) কে stage এ নিয়ে আসে]
+  $ git reset				[stage এ যাওয়া সব file folder কে working directory তে ফিরিয়ে আনে]
 
-# stage Local Repository
-# git Local Repository commit 
+# stage থেকে Local Repository এ যাওয়া
+# git এর ভাষায় Local Repository কে commit করা বুঝায়
 
-  $ git commit -m "write your message" 
-  $ git reset HEAD~
+  $ git commit -m "write your message"	[stage এর ভেতর সব file folder কে Local Repository তে নিয়ে আসে]
+  $ git reset HEAD~				[Local Repository তে যাওয়া সব file folder কে working directory তে ফিরিয়ে আনে]
 
-# git remove
+# git থেকে file folder কে remove করা
 
-  $ git reset --hard
-  $ git rm fileName
-  $ git rm folderName
-  $ git rm fileName -f
-  $ git rm --cached fileName
-  $ git rm -r folderName
+  $ git reset --hard		[delete হওয়া file folder সহ সব file folder কে working directory তে ফিরিয়ে আনে]
+  $ git rm fileName		[সাধারণ অবস্থায় file delete হবে কিন্তু modify হলে delete হবে না]
+  $ git rm folderName		[সাধারণ অবস্থায় folder delete হবে]
+  $ git rm fileName -f		[modify হলেও file delete হবে( -f মানে force)]
+  $ git rm --cached fileName	[file modify হোক না হোক stage থেকে delete হবে কিন্তু working directory তে file থাকবে]
+  $ git rm -r folderName	[folder এর ভেতর যা আছে সব delete হবে]
 
-# 
+# git থেকে branching করা
+# branch অনেকটা গাছের শাখা প্রশাখা এর মত প্রধান branch কে by default বলা হয় main বা master 
+# আর যত sub branch হবে সব প্রধান branch এর মধ্যে থাকবে 
+# প্রধান branch এর data সব sub branch এ show করে 
+# সব branch এর data আলাদা ভাবে নিজস্ব branch এ modify হয় 
+# কিন্তু branch এর সাথে branch এর merge করলে এক branch এর data আর এক branch থেকে modify হয় 
 
+  $ git branch							[branch এর current অবস্থা দেখার জন্য]
+  $ git branch newBranchName					[sub branch বা নতুন branch তৈরি করা]
+  $ git checkout brnachName					[এক branch থেকে আর এক branch এ move করার জন্য]
+  $ git merge branchName -m "write your message"	[যে branch কে merge করব সে branch এ switch করে অন্য branch কে merge করব]
+
+# Example- প্রধান branch হচ্ছে main আর sub branch হচ্ছে development
+           $ git branch develoment								[sub branch তৈরি করা হল]
+           $ git branch										[এখন main branch এ আছি sub branch(development) এ switch বা move করব]
+           $ git checkout development							[main brnach থেকে development branch এ switch করেছি]
+           $ git branch										[এখন development branch এ আছি] 
+           $ git merge main -m "merge in development branch to main brnach"	[development branch থেকে main branch কে merge করেছি]
+
+# git - push, fetch & pull
+
+# push	-	Local repository/Client side থেকে Remote/Server side বা GitHub এ data পাঠানো হয়
+# fetch	-	Remote/Server side বা GitHub থেকে Local repository/Client side এ data পাঠানো হয় 
+        		কিন্তু working directory তে data আসে না data থাকে Local repository তে
+# pull	-	Remote/Server side বা GitHub থেকে working directory তে data change সহ সব data পাঠানো হয় 
+
+# push - Remote কে git এর ভাষা origin বলা হয়
   
-
-
-
-
+  $ git push origin branchName[Local repository থেকে GitHub এ data পাঠানো জন্য]
+  $ git push origin branchName --force[সাধারণ অবস্থায় Local repository থেকে GitHub এ data না গেলে]
+ 
+# fetch
+  
+  $ git fetch   

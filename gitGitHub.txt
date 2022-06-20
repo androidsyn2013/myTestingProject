@@ -32,8 +32,7 @@
 # data যেখানে change করা হোক না কেন Local computer আর Remote server এ একই থাকবে
 # বিশেষ command এর মাধ্যম data tracking করা হয়
 
-# git command list
-
+# git command 
 # working directory এর command list
 
   $ mkdir folderName	[নতুন folder তৈরি করা]
@@ -122,3 +121,4 @@
  
 # fetch - Remote বা GitHub এ কোন data change হলে শুধুমাত্র change করা data local repository তে আসবে    
   $ git fetch   
+আবু সায়েদ  abu sayed

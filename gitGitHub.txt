@@ -113,6 +113,12 @@
   
   $ git push origin branchName[Local repository থেকে GitHub এ data পাঠানো জন্য]
   $ git push origin branchName --force[সাধারণ অবস্থায় Local repository থেকে GitHub এ data না গেলে]
+
+  local repository এ তৈরি করা নতুন branch কে Remote/Server side বা GitHub এ নিতে চাইলে 
+  প্রথমে নতুন তৈরি করা branch এ যেতে হবে তারপর push command চালাতে হবে 
+  $ git checkout branchName 
+  $ git push origin branchName
+  
  
 # fetch - Remote বা GitHub এ কোন data change হলে শুধুমাত্র change করা data local repository তে আসবে    
   $ git fetch   

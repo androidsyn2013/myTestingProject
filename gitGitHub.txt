@@ -114,6 +114,5 @@
   $ git push origin branchName[Local repository থেকে GitHub এ data পাঠানো জন্য]
   $ git push origin branchName --force[সাধারণ অবস্থায় Local repository থেকে GitHub এ data না গেলে]
  
-# fetch
-  
+# fetch - Remote বা GitHub এ কোন data change হলে শুধুমাত্র change করা data local repository তে আসবে    
   $ git fetch   

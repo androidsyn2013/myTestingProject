@@ -22,6 +22,9 @@
   $ git remote add origin https://github.com/USERname/RepositoryName.git
   $ git push origin main 
   and write GitHub username email password specific code 
+
+# config --global user.email "your Email" আর config --global user.name "your user name" এই command গুলো দিলে
+  আর remote add origin https://github.com/USERname/RepositoryName.git coommand দিয়ে বারবার connect দিতে হবে না  
   
 # "main" is  name of the branch name 
   

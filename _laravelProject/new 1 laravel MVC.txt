@@ -1,0 +1,11 @@
+MVC হচ্ছে  Computer Programming এর design pattern 
+MVC হচ্ছে-- M=Model, V=View, C=Controller এর  সংক্ষিপ্ত রূপ  
+Computer Programming এর  Design Pattern আছে  20টি  তার মধ্যে MVC আর  MVP খুবই  জনপ্রিয়  
+JAVA, PHP, dot NET language MVC follow করে 
+Model আর Controller হচ্ছে  class file 
+Model --- Database সম্পর্কিত যে কোন তথ্য বা project এর বাহির থেকে যেকোনো তথ্য Model এ  আসে  আর Model থেকে  Controller এ যায়
+Controller --- এ যেকোনো তথ্য logically process হইয়ে  View তে যায় 
+View --- তে যেকোনো তথ্য প্রদর্শিত হওয়ার জন্য তথ্য process করে 
+আবার View Controller থেকে তথ্য না নিয়ে Model থেকেও তথ্য নিয়ে থাকে 
+কিন্তু বর্তমানে laravel Model use না করে  controller এর মাধ্যমে সব কাজ করে থাকে ,  ইচ্ছা করলে Model এর মাধ্যমেও কাজ করা যায় 
+আমরা এখানে Model এর মাধ্যমে ও কাজ করব 

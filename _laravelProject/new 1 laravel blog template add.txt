@@ -1,0 +1,24 @@
+Create master page 
+
+yourLaravelProject/sources Files/resources/views---right click----New>php file>file name:-"master.blade.php">Finish
+
+Template এর  code গুলো  master.blade.php file এ  copy করতে হবে । তারপর master file কে  routes এ add করতে হবে 
+yourLaravelProject/sources/routes/web.php
+      
+	                 Route::get('/', function () {
+                            return view('master');
+                     });
+					 
+web browser > address:- http://localhost/yourLaravelProject/
+
+yourLaravelProject/public> folder এর ভেতর template asset(image, js, css) গুলো copy করতে হবে
+
+master file এ  গিয়ে asset গুলোর path দেখিয়ে দিতে হবে । Laravel এ path দেয়ার নিয়ম
+
+             href="{{asset('public/templatemo_style.css')}}"
+			 
+			 src="{{asset('public/tabcontent.js')}}"
+			 
+path গুলো সঠিক ভাবে দিতে পারলে সম্পূর্ণ  template load হবে ।
+			 
+

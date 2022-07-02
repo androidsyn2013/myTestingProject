@@ -1,0 +1,44 @@
+Laravel framework
+
+1. Xammpp server install করতে হবে
+2. composer install করতে হবে , composer install প্রক্রিয়া  Laravel.com websit এ  পাওয়া যাবে
+3. composer instal করার পর path দেখাতে হবে যেখানে Xampp folder এর  ভেতর php.exe file আছে  Example- E:/xampp/phph/php.exe
+4. Laravel project install প্রক্রিয়া
+    => E:/xampp/htdocs - htdocs folder এর ভেতর গিয়ে Right click করে power shell command prompt open করতে হবে 
+	
+	   $ composer  create-poject --prefer-dist  laravel/laravel  yourProjectName
+	   
+5. Open web browser 
+6. Address bar এ  localhost লিখে  enterদিতে হবে ,yourProjectName/public folder এ  click করলে  laravel welcome page open হবে
+7. NetBeans IDE তে Laravel Project কে  Add করতে হবে ----Add Project/php/php application/source folder(yourLaravelProject Folder)
+8. Laravel Project Name আর  php Project Name একই  রকম হবে
+9. Laravel Project folder এর ভেতর public folder এ  click করলে  laravel welcome page open হত, এখন এমন একটি  process করতে হবে laravel Project 
+   folder এ click করলে    laravel welcome page open হবে
+   1. public folder এর ভেতর থেকে .htaccess file ও index.php কে cut করে  laravel Project folder এর ভেতর copy করতে হবে
+   2. index.php file এর ভেতর  change করতে হবে 
+       
+	       require __DIR__.'/../vendor/autoload.php'; 
+           require __DIR__.'/vendor/autoload.php';
+		   
+		   $app = require_once __DIR__.'/../bootstrap/app.php';
+		   $app = require_once __DIR__.'/bootstrap/app.php';
+		   
+10. Laravel এর সবগুলো link execute হয় routes এর মাধ্যমে ---- yourLaravelProject/sources Files/routes/web.php
+
+			Route::get('/', function () {
+				return view('welcome');
+			});
+			
+			
+			"/" এখানে backslash হচ্ছে  root বা domain 
+			"welcome" হচ্ছে   welcome page এর নাম
+			
+			এইটা routes টা laravel এর  default পদ্ধতি,  আমরা  controller এর মাধ্যমে  routes কে  process করব   
+			
+11. welcome page আছে -----yourLaravelProject/sources Files/resources/views/welcome.blade.php 
+           
+		             এখানে  welcome.blade.php এর মধ্যে   "blade" হচ্ছে  laravel extension 
+			
+
+
+            
